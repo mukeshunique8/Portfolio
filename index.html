@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="Portfolio_Container">
+
+        <header>
+
+            <div class="myName">
+
+                <p>Mukesh ∞∞∞</p>
+
+            </div>
+
+            <div class="linkPages">
+
+                <ul>
+                    <li><a href="">Home</a></li>
+                    <li><a href="">About</a></li>
+                    <li><a href="#contactDetails">Contact Me</a></li>
+                    <li><a href="">Services</a></li>
+                    <li><a href="">Blog</a></li>
+                    <li><a href="">Social</a></li>
+                </ul>
+
+            </div>
+
+            
+
+        </header>
+
+        <main>
+
+
+            <section id="introProfile">
+
+                    <div class="intro">
+
+                            <h1>Hello!</h1>
+                            <h1>This is Muthu <span> Kumaran</span> !</h1>
+                            
+                            <p>"Greetings from the digital playground! I'm your junior web maestro, blending code with a sprinkle of humor and a dash of creativity. Ready to turn your website into a fun and interactive carnival of online wonders.                              </p>
+                            <marquee behavior="" direction=""> Let the coding festivities begin!"  </marquee>
+
+                            
+                            <button>
+                                <a href="#contactDetails">See Portfolio</a></button>
+                    </div>
+
+                    <div class="profileImg">
+
+                        <img src="/DSC01383.JPG_page-0001.jpg" alt="">
+                    </div>
+
+
+            </section>
+
+
+            <section id="contactDetails">
+
+                <div class="profileImg">
+
+                    <img src="/DSC01383.JPG_page-0001.jpg" alt="">
+                </div>
+
+                <div class="profileDetails">
+
+                    
+
+                    <h1>Hello!</h1>
+                            <h1>I'm Muthu <span> Kumaran</span> !</h1>
+
+                <p>Hello from the coding carnival! I'm a junior web enthusiast juggling pixels and bringing a circus of creativity to your online world. Let's turn your website into a virtual big top where every click is a thrilling act of digital amazement!</p>
+
+                <p id="NameTag"><span> Name:</span> Muthu Kumaran M</p>
+                <p id="age">
+                     <span> Age:</span>
+                      <span id="ageNumber">25</span>
+                </p>
+                <p><span> Address:</span> Thiruvannamalai</p>
+                <p><span> Mobile:</span> 9944731585</p>
+                <p><span> Mail:</span> muthu888focus@gmail.com</p>
+
+                <button><a href="/MUTHU KUMARAN RES UP-2.pdf" download="">Download CV</a></button>
+                </div>
+
+
+
+            </section>
+
+
+        </main>
+
+
+
+
+
+
+    </div>
+
+
+
+
+    <script>
+let ageElement = document.getElementById('ageNumber');
+
+let currentDate = new Date();
+let currentYear = currentDate.getFullYear();
+
+// Extract the birth year from the content of the element
+let birthYear = 1998;
+
+const age = currentYear - birthYear-1;
+
+
+// Update the content of the element with the calculated age
+ageElement.textContent =  age;
+
+
+
+    </script>
+
+
+   
+    
+</body>
+</html>
