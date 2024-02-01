@@ -5,6 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio</title>
     <link rel="stylesheet" href="style.css">
+   
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
 </head>
 <body>
 
@@ -15,18 +18,23 @@
             <div class="myName">
 
                 <p>Mukesh ∞∞∞</p>
+                <ion-icon name="menu-outline" id="toggleMenu" ></ion-icon>
+
 
             </div>
 
+            
+
             <div class="linkPages">
+
+              
 
                 <ul>
                     <li><a href="">Home</a></li>
                     <li><a href="">About</a></li>
-                    <li><a href="#contactDetails">Contact Me</a></li>
-                    <li><a href="">Services</a></li>
-                    <li><a href="">Blog</a></li>
                     <li><a href="">Social</a></li>
+                    <li><a href="">Blog</a></li>
+                    <li><a href="#contactDetails">Contact Me</a></li>
                 </ul>
 
             </div>
@@ -53,7 +61,7 @@
                                 <a href="#contactDetails">See Portfolio</a></button>
                     </div>
 
-                    <div class="profileImg">
+                    <div class="profileImg" id="introImg">
 
                         <img src="/DSC01383.JPG_page-0001.jpg" alt="">
                     </div>
@@ -64,7 +72,7 @@
 
             <section id="contactDetails">
 
-                <div class="profileImg">
+                <div class="profileImg" id="ContactImg">
 
                     <img src="/DSC01383.JPG_page-0001.jpg" alt="">
                 </div>
@@ -76,7 +84,7 @@
                     <h1>Hello!</h1>
                             <h1>I'm Muthu <span> Kumaran</span> !</h1>
 
-                <p>Hello from the coding carnival! I'm a junior web enthusiast juggling pixels and bringing a circus of creativity to your online world. Let's turn your website into a virtual big top where every click is a thrilling act of digital amazement!</p>
+                <p id="lorem" >Hello from the coding carnival! I'm a junior web enthusiast juggling pixels and bringing a circus of creativity to your online world. Let's turn your website into a virtual big top where every click is a thrilling act of digital amazement!</p>
 
                 <p id="NameTag"><span> Name:</span> Muthu Kumaran M</p>
                 <p id="age">
@@ -122,6 +130,15 @@ const age = currentYear - birthYear-1;
 // Update the content of the element with the calculated age
 ageElement.textContent =  age;
 
+
+const togglemenuElement = document.getElementById('toggleMenu')
+const linkPages = document.querySelector('.linkPages')
+
+togglemenuElement.addEventListener('click', function(){
+
+    linkPages.classList.toggle('open')
+
+});
 
 
     </script>
