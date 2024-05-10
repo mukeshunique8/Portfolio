@@ -365,8 +365,14 @@ ion-icon[name="menu-outline"] {
 }
 
 .cards {
-    background-color: var(--primary);
-    display: flex;
+    /* background-color: var(--primary);
+     */
+     background: rgba( 3, 181, 252, 0.65 );
+     box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+     backdrop-filter: blur( 13.5px );
+     -webkit-backdrop-filter: blur( 13.5px );
+     border-radius: 10px;
+     display: flex;
     flex-direction: column;
     margin: 30px;
     padding: 20px;
